@@ -10,6 +10,9 @@ namespace Pr_7
     {
         static void Main(string[] args)
         {
+            Console.Title = "Практическая работа №8";
+Console.WriteLine("Здравствуйте!");
+Console.BackgroundColor = ConsoleColor.Gray;
             int count = 0;
             int n;
             string numbers = "";
@@ -33,17 +36,23 @@ namespace Pr_7
                 }
                 catch (FormatException fEx)
                 {
-                    Console.WriteLine($"Ошибка:{fEx.Message}");
+                    Console.BackgroundColor = ConsoleColor.Red;
+Console.WriteLine($"Ошибка:{fEx.Message}");
+Console.ResetColor();
                     i--;
                 }
                 catch (OverflowException oEx)
                 {
-                    Console.WriteLine($"Ошибка: {oEx.Message}");
+                        Console.BackgroundColor = ConsoleColor.Red;
+Console.WriteLine($"Ошибка: {oEx.Message}");
+    Console.ResetColor();
                     i--;
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Произошла ошибка: {ex.Message}");
+                        Console.BackgroundColor = ConsoleColor.Red;
+Console.WriteLine($"Произошла ошибка: {ex.Message}");
+    Console.ResetColor();
                     i--;
                 }
             }
