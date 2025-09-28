@@ -1,4 +1,4 @@
-﻿//***************************************************************************
+//***************************************************************************
 // *Практическая работа №7                                                  *
 //* Выполнил: Абдуллаев Э.С., группа 2-ИСПд                                 *
 //* Задание: Определить кол-во чисел, значение которых >5 по модулю         *
@@ -12,7 +12,7 @@ namespace Pr_7
         {
             Console.Title = "Практическая работа №8";
             Console.WriteLine("Здравствуйте!");
-            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.Blue;
             int count = 0;
             int n;
             string numbers = "";
@@ -37,22 +37,22 @@ namespace Pr_7
                 catch (FormatException fEx)
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
-Console.WriteLine($"Ошибка:{fEx.Message}");
-Console.ResetColor();
+                    Console.WriteLine($"Ошибка:{fEx.Message}");
+                    Console.ResetColor();
                     i--;
                 }
                 catch (OverflowException oEx)
                 {
-                        Console.BackgroundColor = ConsoleColor.Red;
-Console.WriteLine($"Ошибка: {oEx.Message}");
-    Console.ResetColor();
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"Ошибка: {oEx.Message}");
+                    Console.ResetColor();
                     i--;
                 }
                 catch (Exception ex)
                 {
-                        Console.BackgroundColor = ConsoleColor.Red;
-Console.WriteLine($"Произошла ошибка: {ex.Message}");
-    Console.ResetColor();
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"Произошла ошибка: {ex.Message}");
+                    Console.ResetColor();
                     i--;
                 }
             }
