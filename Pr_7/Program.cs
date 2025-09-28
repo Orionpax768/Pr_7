@@ -12,7 +12,7 @@ namespace Pr_7
         {
             Console.Title = "Практическая работа №8";
             Console.WriteLine("Здравствуйте!");
-            Console.ForegroundColor = ConsoleColor.Gray
+            Console.ForegroundColor = ConsoleColor.Gray;
             int count = 0;
             int n;
             string numbers = "";
