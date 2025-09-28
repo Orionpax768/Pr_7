@@ -14,7 +14,7 @@ namespace Pr_7
             Console.WriteLine("Здравствуйте!");
             Console.ForegroundColor = ConsoleColor.Blue;
             int count = 0;
-            int n;
+            int n
             string numbers = "";
 
             Console.WriteLine("Введите 10 целых чисел:");
